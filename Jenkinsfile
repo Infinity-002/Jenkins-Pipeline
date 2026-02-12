@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                javac main.java
-                java main.java
+                python main.py
             }
         }
         stage('Test') {
